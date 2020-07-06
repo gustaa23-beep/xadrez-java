@@ -14,8 +14,8 @@ public class ChessMatch {
 		initialSetup();
 	}
 	
-	/*Esse método retornará a matriz de peças de xadrez a partir do tabuleiro.*/
 	public ChessPiece[][] getPieces() { 
+		/*Esse método retornará a matriz de peças de xadrez a partir do tabuleiro.*/
 		ChessPiece[][] mat = new ChessPiece[board.getRows()][board.getColumns()];
 		for (int i=0; i<board.getRows(); i++) {
 			for( int j=0; j<board.getColumns();j++) {
@@ -26,8 +26,8 @@ public class ChessMatch {
 	}
 	
 	public void initialSetup() {
-		board.placePiece(new Rook(board, Color.WHITE), new Position(2,1));
-		board.placePiece(new King(board, Color.WHITE), new Position(7,4));
+		board.placePiece(new Rook(board, Color.WHITE), new Position(7,4));
+		board.placePiece(new King(board, Color.WHITE), new Position(9,4));
 		board.placePiece(new King(board, Color.BLACK), new Position(0,4));
 	}
 }
